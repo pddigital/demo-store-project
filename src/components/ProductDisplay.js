@@ -13,18 +13,18 @@ const ProductDisplay = () => {
   ));
 
   return (
-    <main>
-      <div className="image-panel">
-        <ProductImage />
-      </div>
-      <div>
-        <h2>Choose Your Mattress</h2>
-        <label>SELECT MATTRESS TYPE:</label>
-        <div className="tab-panel">{productsMapped}</div>
-        <ProductDetails />
-        <AddToCart />
-      </div>
-    </main>
+      <main>
+        <div className="image-panel">
+          <ProductImage />
+        </div>
+        <div>
+          <h2>Choose Your Mattress</h2>
+          <label>SELECT MATTRESS TYPE:</label>
+          <div className="tab-panel">{productsMapped}</div>
+          <ProductDetails />
+          <AddToCart />
+        </div>
+      </main>
   );
 };
 
