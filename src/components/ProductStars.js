@@ -12,19 +12,15 @@ const ProductStars = () => {
   // For decimal ratings, using a half star; For whole numbers, full star;
   for (let i = 1; i <= rating; i++) {
     if (i === rating && !Number.isInteger(selectedProduct.reviewRating)) {
-      stars.push('half');
+      stars.push(<FaStarHalf key={Math.random()} />);
       break;
     }
-    stars.push('whole');
+    stars.push(<FaStar key={Math.random()} />);
   }
-
-  const starRatings = stars.map((star) => {
-    return star === 'whole' ? <FaStar key={Math.random()} /> : <FaStarHalf key={Math.random()} />;
-  });
 
   return (
     <div className="review-stars">
-      {starRatings} {selectedProduct.reviewRating} out of 5
+      {stars} {selectedProduct.reviewRating} out of 5
     </div>
   );
 };
