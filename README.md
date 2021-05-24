@@ -1,4 +1,4 @@
-## Demo of Add to Cart Functionality in React
+## Demo of Add to Cart Functionality in React 
 
 ## Instructions
 1. Run `npm install` to install dependencies.
