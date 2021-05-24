@@ -5,8 +5,8 @@ import { FaStar, FaStarHalf } from 'react-icons/fa';
 const ProductStars = () => {
   const { selectedProduct } = useContext(ProductContext);
 
-  // round for the loop
-  const rating = (Math.ceil(selectedProduct.reviewRating) / 10) * 10;
+  // round up for the loop
+  const rating = Math.ceil(selectedProduct.reviewRating);
   const stars = [];
 
   // For decimal ratings, using a half star; For whole numbers, full star;
