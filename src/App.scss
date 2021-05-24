@@ -12,12 +12,12 @@ $light-gray: #f6f5f3;
 body {
   font-family: 'Questrial', sans-serif;
   font-size: 12px;
+  background-color: $light-gray;
 }
 
 h1 {
   color: $base-tan;
   margin: 0;
-  font-family: 'Questrial', sans-serif;
   font-size: 32px;
 }
 
@@ -37,6 +37,7 @@ header {
   display: grid;
   grid-template-columns: 3fr 1fr;
   padding: 15px;
+  background-color: white;
 
   div:last-child {
     text-align: right;
@@ -81,8 +82,6 @@ header {
 
 main {
   width: 100%;
-  min-height: 800px;
-  background-color: $light-gray;
   border-top: 2px solid $base-gray;
   padding: 20px;
   display: grid;
@@ -92,6 +91,8 @@ main {
   div:last-child {
     width: 100%;
     max-width: 600px;
+    margin: auto;
+    text-align: center;
   }
 }
 
@@ -126,16 +127,17 @@ main {
 
 .add-to-cart {
   width: 100%;
+  font-size: 18px;
   padding: 15px;
   background-color: $dark-tan;
   border: 1px solid black;
   margin-top: 20px;
   color: white;
   cursor: pointer;
-}
 
-.add-to-cart:hover {
-  opacity: 80%;
+  :hover {
+    opacity: 80%;
+  }
 }
 
 label {
@@ -178,6 +180,10 @@ label {
     border-bottom: 2px solid $base-gray;
   }
 
+  h2 {
+    margin-top: 30px;
+  }
+
   main {
     padding-top: 75px;
     display: block;
@@ -186,6 +192,8 @@ label {
   .tab-panel {
     grid-template-columns: 1fr;
     column-gap: 10px;
+
+    text-align: center;
   }
 
   .select-tab {
