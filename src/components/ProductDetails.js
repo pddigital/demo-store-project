@@ -1,6 +1,5 @@
 import { useContext } from 'react';
 import { ProductContext } from '../state/productProvider';
-import Rating from 'react-simple-star-rating';
 import ProductStars from './ProductStars';
 
 const ProductDetails = () => {

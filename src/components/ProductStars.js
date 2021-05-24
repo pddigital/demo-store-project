@@ -22,7 +22,7 @@ const ProductStars = () => {
     return star === 'whole' ? <FaStar /> : <FaStarHalf />;
   });
 
-  return <div className="review-stars">{starRatings} out of 5</div>;
+  return <div className="review-stars">{starRatings} {selectedProduct.reviewRating} out of 5</div>;
 };
 
 export default ProductStars;
