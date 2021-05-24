@@ -170,7 +170,7 @@ label {
   }
 }
 
-/* Tablet-specific styles */
+/* Tablet and phone specific styles */
 
 @media (max-width: 768px) {
   header {
@@ -192,24 +192,10 @@ label {
   .tab-panel {
     grid-template-columns: 1fr;
     column-gap: 10px;
-
     text-align: center;
   }
 
   .select-tab {
     padding: 15px;
-  }
-}
-
-/* Phone-specific styles */
-
-@media (max-width: 640px) {
-  main {
-    display: block;
-  }
-
-  .tab-panel {
-    grid-template-columns: 1fr;
-    column-gap: 5px;
   }
 }
