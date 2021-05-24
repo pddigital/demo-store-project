@@ -11,7 +11,7 @@ const Header = () => {
       </div>
       <div>
         <CartLogo className="cart-icon" />
-        <span className="cart-qty">{cart.length}</span>
+        <div className="cart-qty"><div>{cart.length}</div></div>
       </div>
     </header>
   );

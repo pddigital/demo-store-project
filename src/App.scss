@@ -42,18 +42,39 @@ header {
     text-align: right;
   }
   .cart-icon {
+    margin-right: 10px;
     width: 30px;
   }
 
   .cart-icon > path {
-    fill: $base-tan;
+    fill: black;
   }
 
   .cart-qty {
-    vertical-align: top;
-    font-size: 20px;
     margin-left: 5px;
-    color: $base-tan;
+    position: absolute;
+    top: 20px;
+    right: 15px;
+    background-color: $base-tan;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    line-height: 0;
+
+    div {
+      position: absolute;
+      bottom: 50%;
+      width: 100%;
+      text-align: center;
+      color: white;
+      font-size: 12px;
+    }
+  }
+
+  .cart-qty::after {
+    content: '';
+    display: block;
+    padding-bottom: 100%;
   }
 }
 
@@ -144,7 +165,7 @@ main {
   }
 }
 
- /* Tablet-specific styles */
+/* Tablet-specific styles */
 
 @media (max-width: 768px) {
   header {
@@ -165,7 +186,7 @@ main {
   }
 }
 
- /* Phone-specific styles */
+/* Phone-specific styles */
 
 @media (max-width: 640px) {
   main {
