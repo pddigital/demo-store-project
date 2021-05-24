@@ -1,70 +1,36 @@
-# Getting Started with Create React App
+## Instructions
+1. Run `npm install` to install dependencies.
+2. Run `npm start` to start app.
+2. Navigate to `localhost:3000` in the browser.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Mattress Shop Page
+Create a single page React application using the screen shot provided (mock.png) as your guide. Please use the data provided in mattresses.json to populate the mattress data in the application.
 
-## Available Scripts
+We recommend using [Create React App](https://reactjs.org/docs/create-a-new-react-app.html), but if you roll your own build, please include the node version or an .nvmrc file and any other instructions or dependencies.
 
-In the project directory, you can run:
+### UI
+1. The design should match the mock as best as possible.
+   * You can use a UI framework (ex. Bootstrap) if preferred, **BUT** you must build at least the mattress selection toggle from scratch.
+   * Use a cart icon of your choice.
+2. We have only provided the design for the desktop view. You are responsible for deciding how the application will scale to a mobile experience.
+3. Use fonts 'Source Serif Pro' for the "Choose Your Mattress" header and 'Questrial' for body copy. These can be found on google fonts website.
+### Functionality
+1. The user should have the ability to toggle between mattresses.
+2. As the mattress selection changes:
+   * the selected mattress name and price should be reflected below the mattress toggle.
+   * the selected mattress image should be reflected to the left of the configuration area (image files can be found in /images)
+3. The "Add to Cart" button should increment the cart item count (in the top right of the view) 
+### Get Creative!
+The following requirements are loose - this is an opportunity to make the app your own!
+1. Display the Review Rating for the selected mattress.
+2. Add an animation where you see fit.
 
-### `npm start`
+### Bonus Items
+1. Use a css preprocessor if you prefer sass or less.
+2. Add your own flair to the app.
+3. Add a unit test for the "Add to Cart" functionality.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### Submission
+Please submit a public GITHUB repo url or a bundled file of your work to devhiring@saatvamattress.com.
+Please submit a README.md file with your project with instructions on how to get your project up and running and any other miscellaneous items we would need to run.
