@@ -41,6 +41,7 @@ header {
   div:last-child {
     text-align: right;
   }
+
   .cart-icon {
     margin-right: 10px;
     width: 30px;
@@ -92,77 +93,78 @@ main {
     width: 100%;
     max-width: 600px;
   }
+}
 
-  .product-image {
-    width: 100%;
-    max-width: 600px;
-    margin: auto;
-    display: block;
+
+.product-image {
+  width: 100%;
+  max-width: 600px;
+  margin: auto;
+  display: block;
+}
+
+.tab-panel {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 20px;
+  row-gap: 5px;
+  margin-top: 10px;
+}
+
+.select-tab {
+  border: 1px solid $base-gray;
+  background-color: white;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.is-selected {
+  border: 1px solid black;
+  background-color: $base-gray;
+  color: white;
+}
+
+.add-to-cart {
+  width: 100%;
+  padding: 15px;
+  background-color: $dark-tan;
+  border: 1px solid black;
+  margin-top: 20px;
+  color: white;
+  cursor: pointer;
+}
+
+.add-to-cart:hover {
+  opacity: 80%;
+}
+
+label {
+  font-size: 16px;
+}
+
+.product-details {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  column-gap: 10px;
+  font-size: 16px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+
+  p {
+    margin: 0;
   }
 
-  .tab-panel {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    column-gap: 20px;
-    row-gap: 5px;
-    margin-top: 10px;
+  .product-name {
+    text-align: left;
   }
 
-  .select-tab {
-    border: 1px solid $base-gray;
-    background-color: white;
-    padding: 10px;
-    cursor: pointer;
+  .product-price {
+    text-align: right;
   }
 
-  .is-selected {
-    border: 1px solid black;
-    background-color: $base-gray;
-    color: white;
-  }
-
-  .add-to-cart {
-    width: 100%;
-    padding: 15px;
-    background-color: $dark-tan;
-    border: 1px solid black;
-    margin-top: 20px;
-    color: white;
-    cursor: pointer;
-  }
-
-  .add-to-cart:hover {
-    opacity: 80%;
-  }
-
-  label {
-    font-size: 16px;
-  }
-
-  .product-details {
-    display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
-    column-gap: 10px;
-    font-size: 16px;
-    margin-top: 30px;
-    margin-bottom: 30px;
-
-    p {
-      margin: 0;
-    }
-
-    .product-name {
-      text-align: left;
-    }
-
-    .product-price {
-      text-align: right;
-    }
-
-    .review-stars {
-      text-align: center;
-      font-size: 12px;
-    }
+  .review-stars {
+    text-align: center;
+    font-size: 12px;
   }
 }
 
@@ -184,6 +186,10 @@ main {
   .tab-panel {
     grid-template-columns: 1fr;
     column-gap: 10px;
+  }
+
+  .select-tab {
+    padding: 15px;
   }
 }
 
