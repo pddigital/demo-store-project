@@ -19,7 +19,7 @@ const ProductStars = () => {
   }
 
   const starRatings = stars.map((star) => {
-    return star === 'whole' ? <FaStar /> : <FaStarHalf />;
+    return star === 'whole' ? <FaStar key={Math.random()} /> : <FaStarHalf key={Math.random()} />;
   });
 
   return (
